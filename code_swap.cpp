@@ -5,7 +5,7 @@
 #include <limits>
 
 void
-swap(int* a, int* b) {
+swap(int& a, int& b) {
     int t {*a};
     *a = *b;
     *b = t;
