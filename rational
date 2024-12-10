@@ -5,11 +5,11 @@ private:
     int denom; 
     int num;
 public:
-    Rational () : num(0), denon (1) (
-    Rational(int n) : num(n), denon (1) f)
-    Rational(int n, int d) : num(n) , denom(d) {}
+    Rational () : num(0), denom (1) {}
+    Rational(int n) : num(n), denom(1){}
+    Rational(int n, int d) : num(n), denom(d) {}
 
-    friend bool operator==(const Rational & r1, const Rational& r2) {
+    friend bool operator==(const Rational& r1, const Rational& r2) {
         return r1.num + r2.denom==r1.denom*r2.num;
     }
     friend Rational operator+(const Rational& r1, const Rational& r2){
